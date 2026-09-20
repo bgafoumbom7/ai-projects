@@ -13,7 +13,7 @@ A collection of small, self-contained AI projects. Each folder is independent an
 ## Getting started
 
 ```bash
-git clone https://github.com/<your-username>/ai-projects.git
+git clone https://github.com/bgafoumbom7/ai-projects.git
 cd ai-projects
 pip install -r requirements.txt
 ```
