@@ -1,0 +1,4 @@
+anthropic>=0.40
+scikit-learn>=1.4
+numpy>=1.26
+requests>=2.31
