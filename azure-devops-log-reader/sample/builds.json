@@ -1,0 +1,44 @@
+{
+  "count": 3,
+  "value": [
+    {
+      "id": 4821,
+      "buildNumber": "20260918.3",
+      "status": "completed",
+      "result": "failed",
+      "definition": {"id": 17, "name": "webapp-deploy"},
+      "sourceBranch": "refs/heads/main",
+      "sourceVersion": "9f3c2a1e7b8d4c6f5a2b1c0d9e8f7a6b5c4d3e2f",
+      "startTime": "2026-09-18T09:41:02.11Z",
+      "finishTime": "2026-09-18T09:49:37.54Z",
+      "requestedFor": {"displayName": "Priya Nair"},
+      "_links": {"web": {"href": "https://dev.azure.com/contoso/webshop/_build/results?buildId=4821"}}
+    },
+    {
+      "id": 4820,
+      "buildNumber": "20260918.2",
+      "status": "completed",
+      "result": "succeeded",
+      "definition": {"id": 17, "name": "webapp-deploy"},
+      "sourceBranch": "refs/heads/main",
+      "sourceVersion": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+      "startTime": "2026-09-18T07:12:44.00Z",
+      "finishTime": "2026-09-18T07:20:10.31Z",
+      "requestedFor": {"displayName": "Marcus Lee"},
+      "_links": {"web": {"href": "https://dev.azure.com/contoso/webshop/_build/results?buildId=4820"}}
+    },
+    {
+      "id": 4815,
+      "buildNumber": "20260917.6",
+      "status": "completed",
+      "result": "succeeded",
+      "definition": {"id": 22, "name": "api-deploy"},
+      "sourceBranch": "refs/heads/release/2.4",
+      "sourceVersion": "aa11bb22cc33dd44ee55ff6677889900aabbccdd",
+      "startTime": "2026-09-17T16:03:15.00Z",
+      "finishTime": "2026-09-17T16:11:48.09Z",
+      "requestedFor": {"displayName": "Priya Nair"},
+      "_links": {"web": {"href": "https://dev.azure.com/contoso/webshop/_build/results?buildId=4815"}}
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+2026-09-18T09:46:04.1001000Z ##[section]Starting: Download artifact
+2026-09-18T09:46:05.3300000Z Downloading artifact 'drop' (48.2 MB)
+2026-09-18T09:46:17.9000000Z Downloaded 1 file(s) to /home/vsts/work/1/drop
+2026-09-18T09:46:18.0000000Z ##[section]Finishing: Download artifact

@@ -1,0 +1,25 @@
+2026-09-18T09:46:19.4021339Z ##[section]Starting: Azure Web App Deploy: webshop-prod
+2026-09-18T09:46:19.4185790Z ==============================================================================
+2026-09-18T09:46:19.4186001Z Task         : Azure Web App
+2026-09-18T09:46:19.4186109Z Description  : Deploy an Azure Web App for Linux or Windows
+2026-09-18T09:46:19.4186214Z Version      : 1.245.0
+2026-09-18T09:46:19.4186307Z ==============================================================================
+2026-09-18T09:46:20.8713322Z Got service connection details for Azure App Service:'webshop-prod'
+2026-09-18T09:46:22.1104219Z Package deployment using ZIP Deploy initiated.
+2026-09-18T09:46:22.1105011Z Uploading package (48.2 MB) to https://webshop-prod.scm.azurewebsites.net/api/zipdeploy
+2026-09-18T09:46:58.3320012Z Updating submodules.
+2026-09-18T09:46:58.3320440Z Preparing deployment for commit id '9f3c2a1e7b'.
+2026-09-18T09:46:59.0021900Z Running oryx build...
+2026-09-18T09:47:41.5510002Z Detected node version 20.11.1
+2026-09-18T09:47:41.5510300Z Running 'npm install --production'
+2026-09-18T09:48:55.9100215Z npm ERR! code ERESOLVE
+2026-09-18T09:48:55.9100601Z npm ERR! ERESOLVE could not resolve
+2026-09-18T09:48:55.9100811Z npm ERR! While resolving: webshop@2.4.1
+2026-09-18T09:48:55.9101002Z npm ERR! Found: react@19.1.0
+2026-09-18T09:48:55.9101198Z npm ERR! Could not resolve dependency: peer react@"^18.0.0" from react-legacy-modal@3.2.0
+2026-09-18T09:48:56.0233117Z Oryx build failed with exit code 1
+2026-09-18T09:49:18.7761231Z Deployment Failed. deployer = VSTS_ZIP_DEPLOY deploymentPath = ZipDeploy. Extract zip.
+2026-09-18T09:49:19.1200023Z ##[error]Error: Failed to deploy web package to App Service.
+2026-09-18T09:49:19.1200811Z ##[error]Error: Deployment Failed, Package deployment using ZIP Deploy failed. Refer logs for more details.
+2026-09-18T09:49:19.9000345Z App Service Application URL: https://webshop-prod.azurewebsites.net
+2026-09-18T09:49:20.0100002Z ##[section]Finishing: Azure Web App Deploy: webshop-prod

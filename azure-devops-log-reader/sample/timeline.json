@@ -1,0 +1,32 @@
+{
+  "records": [
+    {"id": "s1", "parentId": null, "type": "Stage", "name": "Build", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:41:05Z", "finishTime": "2026-09-18T09:45:12Z", "order": 1},
+    {"id": "j1", "parentId": "s1", "type": "Job", "name": "Build and test", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:41:08Z", "finishTime": "2026-09-18T09:45:10Z", "order": 1},
+    {"id": "t1", "parentId": "j1", "type": "Task", "name": "Checkout", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:41:09Z", "finishTime": "2026-09-18T09:41:21Z", "order": 1, "log": {"id": 3}},
+    {"id": "t2", "parentId": "j1", "type": "Task", "name": "npm install", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:41:22Z", "finishTime": "2026-09-18T09:42:40Z", "order": 2, "log": {"id": 4}},
+    {"id": "t3", "parentId": "j1", "type": "Task", "name": "npm run build", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:42:41Z", "finishTime": "2026-09-18T09:44:30Z", "order": 3, "log": {"id": 5}},
+    {"id": "t4", "parentId": "j1", "type": "Task", "name": "Publish artifact", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:44:31Z", "finishTime": "2026-09-18T09:45:09Z", "order": 4, "log": {"id": 6}},
+
+    {"id": "s2", "parentId": null, "type": "Stage", "name": "Deploy to Production", "state": "completed", "result": "failed",
+     "startTime": "2026-09-18T09:45:20Z", "finishTime": "2026-09-18T09:49:35Z", "order": 2},
+    {"id": "c1", "parentId": "s2", "type": "Checkpoint", "name": "Checkpoint", "state": "completed", "result": "succeeded", "order": 1},
+    {"id": "j2", "parentId": "s2", "type": "Job", "name": "Deploy webapp", "state": "completed", "result": "failed",
+     "startTime": "2026-09-18T09:46:02Z", "finishTime": "2026-09-18T09:49:33Z", "order": 2},
+    {"id": "t5", "parentId": "j2", "type": "Task", "name": "Download artifact", "state": "completed", "result": "succeeded",
+     "startTime": "2026-09-18T09:46:04Z", "finishTime": "2026-09-18T09:46:18Z", "order": 1, "log": {"id": 10}},
+    {"id": "t6", "parentId": "j2", "type": "Task", "name": "Azure Web App Deploy: webshop-prod", "state": "completed", "result": "failed",
+     "startTime": "2026-09-18T09:46:19Z", "finishTime": "2026-09-18T09:49:20Z", "order": 2, "log": {"id": 12},
+     "issues": [
+       {"type": "error", "category": "General", "message": "Error: Failed to deploy web package to App Service."},
+       {"type": "error", "category": "General", "message": "Error: Deployment Failed, Package deployment using ZIP Deploy failed. Refer logs for more details."}
+     ]},
+    {"id": "t7", "parentId": "j2", "type": "Task", "name": "Smoke test", "state": "completed", "result": "skipped",
+     "order": 3, "log": {"id": 13}}
+  ]
+}
